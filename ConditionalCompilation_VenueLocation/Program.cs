@@ -6,4 +6,5 @@ Console.WriteLine("Hello, World!");
 
 var venue = new Venue();
 
+// this should not error, and Location should be included.
 venue.Location = null;
