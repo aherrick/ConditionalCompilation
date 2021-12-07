@@ -7,11 +7,16 @@
 
 	</PropertyGroup>
 
+	<!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DefineConstants>$(DefineConstants)EXCLUDE_VENUE_LOCATION</DefineConstants>
+	</PropertyGroup>-->
+
 	<ItemGroup>
 		<ProjectReference Include="..\ConditionalCompilation\ConditionalCompilation.csproj">
+			<DefineConstants>$(DefineConstants)EXCLUDE_VENUE_LOCATION</DefineConstants>
 
-		<Properties>DefineConstants=EXCLUDE_VENUE_LOCATION</Properties>
 		</ProjectReference>
+		
 	</ItemGroup>
 
 </Project>
